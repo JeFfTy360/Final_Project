@@ -1,0 +1,11 @@
+pip install fastapi tortoise-orm uvicorn aerich
+
+fastapi dev main.py
+
+aerich init -t config.TORTOISE_ORM
+
+aerich --app name_of_application init-db
+
+aerichc --app name_of_application migrate 
+
+aerich --app name_of_application update
