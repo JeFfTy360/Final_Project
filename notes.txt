@@ -9,3 +9,7 @@ aerich --app name_of_application init-db
 aerichc --app name_of_application migrate 
 
 aerich --app name_of_application update
+
+
+
+

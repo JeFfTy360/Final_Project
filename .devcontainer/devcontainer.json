@@ -1,0 +1,16 @@
+{
+    "name": "TCHEKEM_FINAL_PROJECT",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "backend",
+    "workspaceFolder": "/backend",
+    "remoteUser": "root",
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+    }
+}

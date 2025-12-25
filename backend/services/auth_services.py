@@ -29,7 +29,7 @@ class AuthService:
                 company_name= user_data.company_name,
                 description= user_data.company_description,
                 address= user_data.company_address,
-                user= user
+                company_id = user.id
             )
             return {"message": "User-Company created successfully"}
         
@@ -37,7 +37,7 @@ class AuthService:
             await Employee.create(
                 bio= user_data.employee_bio,
                 title= user_data.employee_title,
-                user= user
+                employee_id = user.id
             )
             return {"message": "User-Employee created successfully"}
 

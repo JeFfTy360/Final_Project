@@ -29,11 +29,13 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "5173:5173"
+      - "3000:3000"
     volumes:
       - ./frontend:/app
       - node_modules_volume:/app/node_modules
-    command: npm run dev -- --host --port 5173
+    command: npm run dev
+    depends_on:
+      - backend
   adminer:
     image: "adminer"
     restart: "always"

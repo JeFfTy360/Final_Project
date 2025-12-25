@@ -9,10 +9,16 @@ TORTOISE_ORM={
     "apps": {
         "models": {
             "models": [
+                "models.schedules",
+                "models.appointments",
+                "models.invitation",
+                "models.CompanyEmployee",
                 "models.user",
                 "models.company",
                 "models.employee",
-                "aerich.models"
+                "models.service",
+                "aerich.models",
+                "models.EmployeeService",
             ],
             "default_connection": "default",
         },

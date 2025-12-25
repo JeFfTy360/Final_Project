@@ -1,7 +1,5 @@
 from tortoise import fields, models
 from utils.pwd_utils import pwd_context
-from models.company import Company
-from models.employee import Employee
 
 
 class User(models.Model):

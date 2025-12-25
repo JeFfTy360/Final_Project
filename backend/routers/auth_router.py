@@ -32,7 +32,7 @@ async def refresh_token(request:Request, response:Response):
 
 
 @router.get("/me", response_model=CurrentUser)
-async def get_current_user(current_user: User = Depends(get_current_user)):
+async def get_me(current_user: User = Depends(get_current_user)):
     return await service.get_me(current_user)
 
 
